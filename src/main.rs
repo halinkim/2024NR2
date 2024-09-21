@@ -58,7 +58,7 @@ fn main() -> Result<(), StrError>{
     plot.add(&orbit2)
         .set_equal_axes(true);
     let fig_path = format!("{input_path}.png");
-    plot.save(fig_path.as_str())?;
+    plot.save_and_show(fig_path.as_str())?;
     println!("Done!");
     Ok(())
 }
